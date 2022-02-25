@@ -1,7 +1,9 @@
-type A = string;
+export * from './import';
 
-export const a:A = 'a';
+export type A = string;
 
-export const isValid = (a:A):boolean => {
+export const a: A = 'a';
+
+export const isValid = (a: A):boolean => {
     return a === 'a';
 }

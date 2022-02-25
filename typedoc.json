@@ -1,0 +1,7 @@
+{
+    "entryPoints": ["src/index.ts"],
+    "out": "docs",
+    "json": "docs/typedoc.json",
+    "name": "My TypeScript Documentation",
+    "includeVersion": true
+}

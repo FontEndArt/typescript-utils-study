@@ -1,0 +1,142 @@
+{
+	"id": 0,
+	"name": "My TypeScript Documentation - v1.0.0",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "My TypeScript Documentation",
+	"children": [
+		{
+			"id": 1,
+			"name": "A",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 3,
+					"character": 12
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			}
+		},
+		{
+			"id": 2,
+			"name": "a",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 5,
+					"character": 13
+				}
+			],
+			"type": {
+				"type": "reference",
+				"id": 1,
+				"name": "A"
+			},
+			"defaultValue": "'a'"
+		},
+		{
+			"id": 6,
+			"name": "b",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "import.ts",
+					"line": 1,
+					"character": 13
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			},
+			"defaultValue": "'b'"
+		},
+		{
+			"id": 3,
+			"name": "isValid",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 7,
+					"character": 13
+				}
+			],
+			"signatures": [
+				{
+					"id": 4,
+					"name": "isValid",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 5,
+							"name": "a",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Variables",
+			"kind": 32,
+			"children": [
+				2,
+				6
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				3
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
+}
