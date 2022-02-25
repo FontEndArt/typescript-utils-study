@@ -1,0 +1,39 @@
+{
+  "name": "typescript-utils-study",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.m.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "start": "pnpm run dev",
+    "dev": "microbundle watch",
+    "babel": "microbundle",
+    "test": "jest --coverage --config=jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FontEndArt/typescript-utils-study.git"
+  },
+  "keywords": [],
+  "author": "wuhaoran <xiaoranzife@163.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FontEndArt/typescript-utils-study/issues"
+  },
+  "homepage": "https://github.com/FontEndArt/typescript-utils-study#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "microbundle": "^0.14.2",
+    "typescript": "^4.5.5"
+  }
+}
