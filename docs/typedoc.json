@@ -7,105 +7,546 @@
 	"originalName": "My TypeScript Documentation",
 	"children": [
 		{
-			"id": 1,
-			"name": "A",
+			"id": 17,
+			"name": "MyExclude",
 			"kind": 4194304,
 			"kindString": "Type alias",
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "index.ts",
+					"fileName": "types/MyExclude.ts",
+					"line": 1,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 18,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				},
+				{
+					"id": 19,
+					"name": "K",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "reference",
+					"id": 18,
+					"name": "T"
+				},
+				"extendsType": {
+					"type": "reference",
+					"id": 19,
+					"name": "K"
+				},
+				"trueType": {
+					"type": "intrinsic",
+					"name": "never"
+				},
+				"falseType": {
+					"type": "reference",
+					"id": 18,
+					"name": "T"
+				}
+			}
+		},
+		{
+			"id": 20,
+			"name": "MyExtract",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyExtract.ts",
+					"line": 1,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 21,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				},
+				{
+					"id": 22,
+					"name": "U",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "reference",
+					"id": 21,
+					"name": "T"
+				},
+				"extendsType": {
+					"type": "reference",
+					"id": 22,
+					"name": "U"
+				},
+				"trueType": {
+					"type": "reference",
+					"id": 21,
+					"name": "T"
+				},
+				"falseType": {
+					"type": "intrinsic",
+					"name": "never"
+				}
+			}
+		},
+		{
+			"id": 14,
+			"name": "MyOmit",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyOmit.ts",
 					"line": 3,
 					"character": 12
 				}
 			],
+			"typeParameter": [
+				{
+					"id": 15,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				},
+				{
+					"id": 16,
+					"name": "K",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							},
+							{
+								"type": "intrinsic",
+								"name": "symbol"
+							}
+						]
+					}
+				}
+			],
 			"type": {
-				"type": "intrinsic",
-				"name": "string"
+				"type": "mapped",
+				"parameter": "P",
+				"parameterType": {
+					"type": "reference",
+					"id": 17,
+					"typeArguments": [
+						{
+							"type": "typeOperator",
+							"operator": "keyof",
+							"target": {
+								"type": "reference",
+								"id": 15,
+								"name": "T"
+							}
+						},
+						{
+							"type": "reference",
+							"id": 16,
+							"name": "K"
+						}
+					],
+					"name": "MyExclude"
+				},
+				"templateType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "reference",
+						"name": "P"
+					},
+					"objectType": {
+						"type": "reference",
+						"id": 15,
+						"name": "T"
+					}
+				}
 			}
 		},
 		{
-			"id": 2,
-			"name": "a",
-			"kind": 32,
-			"kindString": "Variable",
-			"flags": {
-				"isConst": true
-			},
-			"sources": [
-				{
-					"fileName": "index.ts",
-					"line": 5,
-					"character": 13
-				}
-			],
-			"type": {
-				"type": "reference",
-				"id": 1,
-				"name": "A"
-			},
-			"defaultValue": "'a'"
-		},
-		{
-			"id": 6,
-			"name": "b",
-			"kind": 32,
-			"kindString": "Variable",
-			"flags": {
-				"isConst": true
-			},
-			"sources": [
-				{
-					"fileName": "import.ts",
-					"line": 1,
-					"character": 13
-				}
-			],
-			"type": {
-				"type": "intrinsic",
-				"name": "string"
-			},
-			"defaultValue": "'b'"
-		},
-		{
-			"id": 3,
-			"name": "isValid",
-			"kind": 64,
-			"kindString": "Function",
+			"id": 5,
+			"name": "MyPartial",
+			"kind": 4194304,
+			"kindString": "Type alias",
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "index.ts",
-					"line": 7,
+					"fileName": "types/MyPartial.ts",
+					"line": 1,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 6,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "mapped",
+				"parameter": "P",
+				"parameterType": {
+					"type": "typeOperator",
+					"operator": "keyof",
+					"target": {
+						"type": "reference",
+						"id": 6,
+						"name": "T"
+					}
+				},
+				"templateType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "reference",
+						"name": "P"
+					},
+					"objectType": {
+						"type": "reference",
+						"id": 6,
+						"name": "T"
+					}
+				},
+				"optionalModifier": "+"
+			}
+		},
+		{
+			"id": 11,
+			"name": "MyPick",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyPick.ts",
+					"line": 1,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 12,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				},
+				{
+					"id": 13,
+					"name": "K",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {},
+					"type": {
+						"type": "typeOperator",
+						"operator": "keyof",
+						"target": {
+							"type": "reference",
+							"id": 12,
+							"name": "T"
+						}
+					}
+				}
+			],
+			"type": {
+				"type": "mapped",
+				"parameter": "P",
+				"parameterType": {
+					"type": "reference",
+					"id": 13,
+					"name": "K"
+				},
+				"templateType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "reference",
+						"name": "P"
+					},
+					"objectType": {
+						"type": "reference",
+						"id": 12,
+						"name": "T"
+					}
+				}
+			}
+		},
+		{
+			"id": 9,
+			"name": "MyReadonly",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyReadonly.ts",
+					"line": 1,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 10,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "mapped",
+				"parameter": "P",
+				"parameterType": {
+					"type": "typeOperator",
+					"operator": "keyof",
+					"target": {
+						"type": "reference",
+						"id": 10,
+						"name": "T"
+					}
+				},
+				"templateType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "reference",
+						"name": "P"
+					},
+					"objectType": {
+						"type": "reference",
+						"id": 10,
+						"name": "T"
+					}
+				},
+				"readonlyModifier": "+"
+			}
+		},
+		{
+			"id": 7,
+			"name": "MyRequired",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyRequired.ts",
+					"line": 2,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 8,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "mapped",
+				"parameter": "P",
+				"parameterType": {
+					"type": "typeOperator",
+					"operator": "keyof",
+					"target": {
+						"type": "reference",
+						"id": 8,
+						"name": "T"
+					}
+				},
+				"templateType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "reference",
+						"name": "P"
+					},
+					"objectType": {
+						"type": "reference",
+						"id": 8,
+						"name": "T"
+					}
+				},
+				"optionalModifier": "-"
+			}
+		},
+		{
+			"id": 1,
+			"name": "TypeTransferValues",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"comment": {
+				"shortText": "接受一个object type，返回一个values\n如果不是object，则返回原值"
+			},
+			"sources": [
+				{
+					"fileName": "transfer.ts",
+					"line": 5,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 2,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "reference",
+							"id": 2,
+							"name": "T"
+						}
+					]
+				},
+				"extendsType": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "intrinsic",
+							"name": "object"
+						}
+					]
+				},
+				"trueType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "typeOperator",
+						"operator": "keyof",
+						"target": {
+							"type": "reference",
+							"id": 2,
+							"name": "T"
+						}
+					},
+					"objectType": {
+						"type": "mapped",
+						"parameter": "P",
+						"parameterType": {
+							"type": "typeOperator",
+							"operator": "keyof",
+							"target": {
+								"type": "reference",
+								"id": 2,
+								"name": "T"
+							}
+						},
+						"templateType": {
+							"type": "indexedAccess",
+							"indexType": {
+								"type": "reference",
+								"name": "P"
+							},
+							"objectType": {
+								"type": "reference",
+								"id": 2,
+								"name": "T"
+							}
+						},
+						"readonlyModifier": "+"
+					}
+				},
+				"falseType": {
+					"type": "reference",
+					"id": 2,
+					"name": "T"
+				}
+			}
+		},
+		{
+			"id": 3,
+			"name": "isObject",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"comment": {
+				"shortText": "判定是否对象类型"
+			},
+			"sources": [
+				{
+					"fileName": "object.ts",
+					"line": 4,
 					"character": 13
 				}
 			],
-			"signatures": [
+			"typeParameter": [
 				{
 					"id": 4,
-					"name": "isValid",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"parameters": [
-						{
-							"id": 5,
-							"name": "a",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
 				}
-			]
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "reference",
+							"id": 4,
+							"name": "T"
+						}
+					]
+				},
+				"extendsType": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "intrinsic",
+							"name": "object"
+						}
+					]
+				},
+				"trueType": {
+					"type": "literal",
+					"value": true
+				},
+				"falseType": {
+					"type": "literal",
+					"value": false
+				}
+			}
 		}
 	],
 	"groups": [
@@ -113,21 +554,14 @@
 			"title": "Type aliases",
 			"kind": 4194304,
 			"children": [
-				1
-			]
-		},
-		{
-			"title": "Variables",
-			"kind": 32,
-			"children": [
-				2,
-				6
-			]
-		},
-		{
-			"title": "Functions",
-			"kind": 64,
-			"children": [
+				17,
+				20,
+				14,
+				5,
+				11,
+				9,
+				7,
+				1,
 				3
 			]
 		}
