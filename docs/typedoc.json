@@ -7,6 +7,139 @@
 	"originalName": "My TypeScript Documentation",
 	"children": [
 		{
+			"id": 33,
+			"name": "MyConstructorParameters",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyConstructorParameters.ts",
+					"line": 2,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 40,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {},
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 37,
+							"name": "__type",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types/MyConstructorParameters.ts",
+									"line": 2,
+									"character": 46
+								}
+							],
+							"signatures": [
+								{
+									"id": 38,
+									"name": "__type",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isAbstract": true
+									},
+									"parameters": [
+										{
+											"id": 39,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "reference",
+					"id": 40,
+					"name": "T"
+				},
+				"extendsType": {
+					"type": "reflection",
+					"declaration": {
+						"id": 34,
+						"name": "__type",
+						"kind": 512,
+						"kindString": "Constructor",
+						"flags": {},
+						"sources": [
+							{
+								"fileName": "types/MyConstructorParameters.ts",
+								"line": 2,
+								"character": 94
+							}
+						],
+						"signatures": [
+							{
+								"id": 35,
+								"name": "__type",
+								"kind": 16384,
+								"kindString": "Constructor signature",
+								"flags": {
+									"isAbstract": true
+								},
+								"parameters": [
+									{
+										"id": 36,
+										"name": "args",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {
+											"isRest": true
+										},
+										"type": {
+											"type": "inferred",
+											"name": "P"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						]
+					}
+				},
+				"trueType": {
+					"type": "reference",
+					"name": "P"
+				},
+				"falseType": {
+					"type": "intrinsic",
+					"name": "never"
+				}
+			}
+		},
+		{
 			"id": 17,
 			"name": "MyExclude",
 			"kind": 4194304,
@@ -111,6 +244,59 @@
 			}
 		},
 		{
+			"id": 23,
+			"name": "MyNonNullable",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyNonNullable.ts",
+					"line": 1,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 24,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "reference",
+					"id": 24,
+					"name": "T"
+				},
+				"extendsType": {
+					"type": "union",
+					"types": [
+						{
+							"type": "literal",
+							"value": null
+						},
+						{
+							"type": "intrinsic",
+							"name": "undefined"
+						}
+					]
+				},
+				"trueType": {
+					"type": "intrinsic",
+					"name": "never"
+				},
+				"falseType": {
+					"type": "reference",
+					"id": 24,
+					"name": "T"
+				}
+			}
+		},
+		{
 			"id": 14,
 			"name": "MyOmit",
 			"kind": 4194304,
@@ -191,6 +377,135 @@
 						"id": 15,
 						"name": "T"
 					}
+				}
+			}
+		},
+		{
+			"id": 25,
+			"name": "MyParameters",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/MyParameters.ts",
+					"line": 2,
+					"character": 12
+				}
+			],
+			"typeParameter": [
+				{
+					"id": 32,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {},
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 29,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types/MyParameters.ts",
+									"line": 2,
+									"character": 35
+								}
+							],
+							"signatures": [
+								{
+									"id": 30,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 31,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "reference",
+					"id": 32,
+					"name": "T"
+				},
+				"extendsType": {
+					"type": "reflection",
+					"declaration": {
+						"id": 26,
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {},
+						"sources": [
+							{
+								"fileName": "types/MyParameters.ts",
+								"line": 2,
+								"character": 70
+							}
+						],
+						"signatures": [
+							{
+								"id": 27,
+								"name": "__type",
+								"kind": 4096,
+								"kindString": "Call signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 28,
+										"name": "args",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {
+											"isRest": true
+										},
+										"type": {
+											"type": "inferred",
+											"name": "U"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						]
+					}
+				},
+				"trueType": {
+					"type": "reference",
+					"name": "U"
+				},
+				"falseType": {
+					"type": "intrinsic",
+					"name": "never"
 				}
 			}
 		},
@@ -554,9 +869,12 @@
 			"title": "Type aliases",
 			"kind": 4194304,
 			"children": [
+				33,
 				17,
 				20,
+				23,
 				14,
+				25,
 				5,
 				11,
 				9,

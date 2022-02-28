@@ -13,7 +13,7 @@
     "dev": "microbundle watch",
     "build": "microbundle",
     "test": "jest --coverage",
-    "api": "typedoc"
+    "api": "pnpm run build && typedoc"
   },
   "repository": {
     "type": "git",
