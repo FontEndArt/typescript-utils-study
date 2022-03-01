@@ -8,3 +8,7 @@ export * from './MyExtract';
 export * from './MyNonNullable';
 export * from './MyParameters';
 export * from './MyConstructorParameters';
+export * from './ReturnType';
+export * from './MyInstanceType';
+export * from './MyThisParameterType';
+export * from './MyOmitThisParameter';
