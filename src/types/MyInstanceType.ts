@@ -1,4 +1,6 @@
-// 构造函数返回的是类的实例，具体可参考 new 的实现
+/**
+ * @description 构造函数返回的是类的实例，具体可参考 new 的实现
+ */
 export type MyInstanceType<T extends abstract new (...args: any) => any> = T extends abstract new (...args: any) => infer P ? P : T
 
 // class C {

@@ -1,4 +1,6 @@
-// 映射类型 「+」 「-」 用来影响 「readonly」 和 「?」 属性 {只读、可变}
+/**
+ * @description 映射类型 「+」 「-」 用来影响 「readonly」 和 「?」 属性 {只读、可变}
+ */
 export type MyRequired<T> = {
     [P in keyof T]-?: T[P];
 }
