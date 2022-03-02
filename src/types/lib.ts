@@ -12,3 +12,6 @@ export * from './ReturnType';
 export * from './MyInstanceType';
 export * from './MyThisParameterType';
 export * from './MyOmitThisParameter';
+export * from './FirstChar';
+export * from './LastChar';
+export * from './TupleToUnion';
