@@ -18,3 +18,4 @@ export * from './LastChar';
 export * from './TupleToUnion';
 export * from './FirstItem';
 export * from './IsNever';
+export * from './LastItem';
