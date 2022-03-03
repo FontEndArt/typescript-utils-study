@@ -28,3 +28,4 @@ export * from './Flat';
 export * from './IsEmptyType';
 export * from './Shift';
 export * from './IsAny';
+export * from './Push';
