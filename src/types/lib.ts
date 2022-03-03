@@ -20,3 +20,4 @@ export * from './FirstItem';
 export * from './IsNever';
 export * from './LastItem';
 export * from './StringToTuple';
+export * from './LengthOfTuple';
