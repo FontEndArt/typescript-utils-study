@@ -6,5 +6,5 @@
  */
 export type FirstItem<T extends any[]> = T extends [infer F, ...any] ? F : never;
 
-type A = FirstItem<[string, number, boolean]> // string
-type B = FirstItem<['B', 'F', 'E']> // 'B'
+// type A = FirstItem<[string, number, boolean]> // string
+// type B = FirstItem<['B', 'F', 'E']> // 'B'
