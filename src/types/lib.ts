@@ -22,3 +22,4 @@ export * from './LastItem';
 export * from './StringToTuple';
 export * from './LengthOfTuple';
 export * from './LengthOfString';
+export * from './UnwrapPromise';
