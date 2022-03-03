@@ -25,3 +25,4 @@ export * from './LengthOfString';
 export * from './UnwrapPromise';
 export * from './ReverseTuple';
 export * from './Flat';
+export * from './IsEmptyType';
