@@ -31,3 +31,4 @@ export * from './IsAny';
 export * from './Push';
 export * from './RepeatString';
 export * from './TupleToString';
+export * from './Repeat';
