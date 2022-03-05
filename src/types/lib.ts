@@ -33,3 +33,4 @@ export * from './RepeatString';
 export * from './TupleToString';
 export * from './Repeat';
 export * from './Filter';
+export * from './LargerThan';
