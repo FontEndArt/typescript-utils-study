@@ -34,3 +34,5 @@ export * from './TupleToString';
 export * from './Repeat';
 export * from './Filter';
 export * from './LargerThan';
+
+export * from './Add';
