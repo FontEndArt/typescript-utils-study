@@ -36,3 +36,4 @@ export * from './Filter';
 export * from './LargerThan';
 
 export * from './Add';
+export * from './ToNumber';
