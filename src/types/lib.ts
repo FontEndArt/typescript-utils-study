@@ -41,3 +41,4 @@ export * from './UnionToIntersection';
 export * from './FindIndex';
 export * from './Equal';
 export * from './Trim';
+export * from './ReplaceAll';
