@@ -39,3 +39,4 @@ export * from './Add';
 export * from './ToNumber';
 export * from './UnionToIntersection';
 export * from './FindIndex';
+export * from './Equal';
