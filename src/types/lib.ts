@@ -45,3 +45,4 @@ export * from './ReplaceAll';
 export * from './Slice';
 export * from './Subtract';
 export * from './Multiply';
+export * from './Divide';
