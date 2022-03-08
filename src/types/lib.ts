@@ -34,7 +34,7 @@ export * from './TupleToString';
 export * from './Repeat';
 export * from './Filter';
 export * from './LargerThan';
-
+export * from './SmallerThan'; // 仅仅实现了大于0的整数
 export * from './Add';
 export * from './ToNumber';
 export * from './UnionToIntersection';
