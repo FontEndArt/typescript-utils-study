@@ -43,3 +43,4 @@ export * from './Equal';
 export * from './Trim';
 export * from './ReplaceAll';
 export * from './Slice';
+export * from './Subtract';

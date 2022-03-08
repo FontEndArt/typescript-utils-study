@@ -154,3 +154,19 @@ type D4 = LargerThan1<9.33, 9.323>
 type D5 = LargerThan1<-9.33232435455, -9.312838435934953>
 type D6 = LargerThan1<-9.33213123123, -9.32>
 
+
+/**
+ * @name LargerThan2
+ * @description A大于等于B
+ * @example type G1 = LargerThan<1, 2> // false
+ * @example type G2 = LargerThan<1, 1> // true
+ * @example type G3 = LargerThan<2, 1> // true
+ */
+ export type LargerThan2<A extends number, B extends number, TT extends number[] = []> =
+ TT['length'] extends A
+     ? TT['length'] extends B
+         ? true
+         : false
+     : TT['length'] extends B
+         ? true
+         : LargerThan2<A, B, [...TT, 1]>
