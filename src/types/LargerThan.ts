@@ -1,3 +1,4 @@
+import {NumberToTuple} from "./Slice"
 /**
  * @name LargerThan
  * @description 不考虑负数和小数的 LargerThan
@@ -170,3 +171,23 @@ type D6 = LargerThan1<-9.33213123123, -9.32>
      : TT['length'] extends B
          ? true
          : LargerThan2<A, B, [...TT, 1]>
+
+/**
+ * @name LargerThan3
+ * @description A大于B
+ * @example type G1 = LargerThan3<1, 2> // false
+ * @example type G2 = LargerThan3<1, 1> // false
+ * @example type G3 = LargerThan3<2, 1> // true
+ */
+export type LargerThan3<
+    A extends number,
+    B extends number
+> = NumberToTuple<A> extends [...NumberToTuple<B>, ...infer R]
+        ? R['length'] extends 0
+          ? false
+          : true
+        : false
+
+// type G1 = LargerThan3<1, 2> // false
+// type G2 = LargerThan3<1, 1> // false
+// type G3 = LargerThan3<2, 1> // true
