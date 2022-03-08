@@ -42,3 +42,4 @@ export * from './FindIndex';
 export * from './Equal';
 export * from './Trim';
 export * from './ReplaceAll';
+export * from './Slice';
