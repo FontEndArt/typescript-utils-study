@@ -18,7 +18,7 @@ export type NumberToTuple<T extends number = 0, R extends any[] = []> =
  * @example type C = Slice<[number, boolean, bigint], 2, 5> // [bigint]
  * @example type D = Slice<[string, boolean], 0, 1> // [string]
  * @example type E = Slice<[number, boolean, bigint], 5, 6> // []
- * @augments 可以使用LessThan来比较大小，由于索引都是大于等于0的整数，所以可以使用简版的LessThan
+ * > 可以使用LessThan来比较大小，由于索引都是大于等于0的整数，所以可以使用简版的LessThan
  */
 export type Slice<
     A extends any[],

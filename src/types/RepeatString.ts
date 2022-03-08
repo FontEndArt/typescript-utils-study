@@ -13,7 +13,7 @@ export type FlatTupleToString<T extends unknown[], Return extends string = ''> =
  * @example type A = RepeatString<'a', 3> // 'aaa'
  * @example type B = RepeatString<'a', 0> // ''
  * @example type C = RepeatString<'abc', 0> // 'abcabcabc'
- * @augments 看到了很多其他的思路，有先把string转换成tuple的，还有利用一个tuple去做递归不断的扩展length的，我看到了许多思想的迸发，That's-Good！
+ * > 看到了很多其他的思路，有先把string转换成tuple的，还有利用一个tuple去做递归不断的扩展length的，我看到了许多思想的迸发，That's-Good！
  */
 export type RepeatString<T extends string, C extends number, R extends T[] = []> = C extends R['length']
     ? FlatTupleToString<R>

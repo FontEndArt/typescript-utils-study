@@ -18,8 +18,8 @@ export type IsAny<T> = string | number | symbol extends keyof T
  * @example type B = IsAny1<any> // true
  * @example type C = IsAny1<unknown> // false
  * @example type D = IsAny1<never> // false
- * @augments 0-extends-1不满足类型约束（0不可以分配给1），因此也不可能被（0-extends-(1&T)）满足，因为1&T应该比T更窄。
- * @augments any几乎可以匹配所有的其他类型，唯一不匹配的类型是：any-never
+ * > 0-extends-1不满足类型约束（0不可以分配给1），因此也不可能被（0-extends-(1&T)）满足，因为1&T应该比T更窄。
+ * > any几乎可以匹配所有的其他类型，唯一不匹配的类型是：any-never
  */
 export type IsAny1<T> = 0 extends 1 & T ? true : false
 

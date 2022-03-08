@@ -46,3 +46,6 @@ export * from './Slice';
 export * from './Subtract';
 export * from './Multiply';
 export * from './Divide';
+
+export * from './IsObject';
+export * from './TypeTransferValues';

@@ -1,5 +1,5 @@
 {
-    "entryPoints": ["src/index.ts"],
+    "entryPoints": ["./src/types", "./src/utils", "./src/react"],
     "out": "docs",
     "json": "docs/typedoc.json",
     "name": "My TypeScript Documentation",

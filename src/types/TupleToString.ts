@@ -4,7 +4,7 @@
  * @example type A = TupleToString<['a']> // 'a'
  * @example type B = TupleToString<['B', 'F', 'E']> // 'BFE'
  * @example type C = TupleToString<[]> // ''
- * @augments 类型收窄要常用extends+条件判断语句
+ * > 类型收窄要常用extends+条件判断语句
  */
 export type TupleToString<T extends string[]> = T extends [infer L, ...infer R]
     ? `${L extends string ? L : ''}${R extends string[] ? TupleToString<R> : ''}`
